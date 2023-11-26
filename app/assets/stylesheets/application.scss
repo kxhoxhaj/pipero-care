@@ -10,3 +10,18 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@media (min-width: 769px) {
+  body {
+    background-image: url("banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: rgb(247,247,245);
+  }
+}
