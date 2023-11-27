@@ -13,6 +13,7 @@
 
 @media (min-width: 769px) {
   body {
+    
     background-image: url("banner.jpeg");
     width: 100vw;
     height: 100vh;
@@ -30,6 +31,6 @@
 @media (max-width: 768px) {
   body {
     background-image: none;
-    background-color: rgb(247,247,245);
+    background-color: rgb(244,244,244);
   }
 }

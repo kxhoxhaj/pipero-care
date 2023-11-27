@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= image_tag "banner.jpeg" , id: "home-banner"%>
+
+<div class="container d-flex justify-content-center align-items-center home-links-container">
+  <div class="row">
+    <div class="col-12 col-lg-12 home-links-div">
+      <%= link_to "Shërbime", services_path, class: "home-links" %>
+      <%= link_to "home", services_path, class: "home-links" %>
+      <%= link_to "home", services_path, class: "home-links" %>
+      <%= link_to "home", services_path, class: "home-links" %>
+    </div>
+  </div>
+</div>
