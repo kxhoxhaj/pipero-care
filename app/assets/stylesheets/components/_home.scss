@@ -9,27 +9,7 @@
   margin: 0 auto;
   width: 100vw;
 }
-.footer {
-  margin-top: auto;
-  background-image: linear-gradient(to right, $cold, $warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  width: 100vw;
-  color: rgb(244, 244, 244);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
 
-.footer-links{
-  text-decoration: none;
-  color: white;
-  i {
-    font-size: 25px;
-  }
-}
 .home-links{
   display: flex;
   justify-content: center;
@@ -63,7 +43,7 @@
   }
   .home-links{
     margin: 0px;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 15px 0;
     width: 160px;
   }

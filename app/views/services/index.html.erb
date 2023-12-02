@@ -1,0 +1,22 @@
+<div class="container service-container">
+  <% @services.each do |service| %>
+    <div class="service-card">
+      <div class="service-name">
+        <strong>
+          <%= p service.name %>
+        </strong>
+      </div>
+      <div class="separate">
+      <p> </p>
+      </div>
+      <div class="service-info">
+        <strong class="price">
+          <%= p service.price %>
+        </strong>
+        <p class="currency">
+          <%= p service.currency %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>

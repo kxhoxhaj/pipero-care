@@ -1,6 +1,41 @@
 <div class="footer">
-  <div class="footer-links-div">
-    <a href="https://www.instagram.com/piperocare/?hl=en" class="footer-links"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/piperocare/" class="footer-links"><i class="fab fa-facebook"></i></a>
+  <div class="contact">
+    <div class="d-flex">
+      <h6 class="me-1">Kontaktoni:</h6>
+      <div>
+        <div class="d-flex">
+          <i class="fa-solid fa-phone me-1"></i> <p>+355 69 70 48 000</p>
+        </div>
+        <div class="d-flex">
+          <i class="fa-solid fa-envelope me-1"></i> <p>info@piperocare.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <h6>Follow Us</h6>
+    <div class="footer-links-div">
+      <a href="https://www.instagram.com/piperocare/?hl=en" class="footer-links"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/piperocare/" class="footer-links"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+  <div class="address">
+    <div class="d-flex justify-content-end">
+      <h6 class="me-1">Adresa:</h6>
+      <div>
+        <%= link_to "https://www.google.com/maps/place/Medical+Center+Dr.Pipero/@41.2828935,19.8604931,17z/data=!3m1!4b1!4m6!3m5!1s0x135037400021b355:0x165494d89bef80f2!8m2!3d41.2828935!4d19.863068!16s%2Fg%2F11f0kxkb3k?entry=ttu", class: "navbar-brand" do %>
+          <div class="d-flex">
+            <i class="fa-solid fa-location-dot me-1"></i>
+            <h6>Lunder</h6>
+          </div>
+        <% end %>
+        <%= link_to "https://www.google.com/maps/place/PiperoCare+Astir/@41.328349,19.7828053,17z/data=!3m1!4b1!4m6!3m5!1s0x1350317ea4a58201:0xce3994d3e5ec48ff!8m2!3d41.328349!4d19.7853802!16s%2Fg%2F11rznryd49?entry=ttu", class: "navbar-brand" do %>
+          <div class="d-flex">
+            <i class="fa-solid fa-location-dot me-1"></i>
+            <h6>Tiranë</h6>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

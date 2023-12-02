@@ -1,0 +1,24 @@
+.info-container{
+  margin: 0 28px;
+  margin-top: 30px;
+  i {
+    color: $warm;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+
+.info-address{
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+@media (min-width: 769px) {
+  .info-container {
+    display: none;
+  }
+}

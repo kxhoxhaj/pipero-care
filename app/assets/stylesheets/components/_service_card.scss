@@ -1,0 +1,86 @@
+.service-card {
+  background-color: rgb(247, 247, 247);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.service-name{
+  width: 75%;
+}
+.service-info {
+  height: 60px;
+  width: 20%;
+  position: relative;
+  .currency {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  .price {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  }
+}
+.separate {
+  width: 5%;
+  background-color: $warm;
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+  padding: 16px 0;
+  margin: 0 5px;
+}
+
+@media(max-width: 768px) {
+  .service-container {
+    margin-bottom: 80px;
+  }
+
+  .service-card {
+    font-size: 10px;
+    strong {
+      font-size: 13px;
+    }
+  }
+  .service-info {
+    height: 48px;
+  }
+}
+
+
+@media(min-width: 769px) {
+  .service-container{
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 80px;
+  }
+
+  .service-card {
+    margin: 8px 8px;
+    font-size: 12px;
+    strong {
+      font-size: 16px;
+    }
+  }
+
+  .separate {
+    background-color: $warm;
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+    padding: 22px 0;
+    margin: 0 5px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .service-container{
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
