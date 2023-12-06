@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-12 col-lg-6 package-container mx-2">
+      <div class="header">
+        <div class="package-name">
+          <% if @package.name == "Full Body"%>
+            <h1 class="font-effect-fire" id="smaller-text">
+              <% @package.name.split.each do |word|%>
+                <li>
+                  <%= p word %>
+                </li>
+              <% end %>
+            </h1>
+          <% else %>
+            <h1 class="font-effect-fire">
+              <%= p @package.name %>
+            </h1>
+          <% end %>
+        </div>
+        <% if @package.desctription == "Vajza" %>
+          <div class="description-fullbody vajza mt-2">
+            <h1>
+              <%= @package.desctription %>
+            </h1>
+          </div>
+        <% elsif @package.desctription == "Djem" %>
+          <div class="description-fullbody djem mt-2">
+            <h1>
+              <%= @package.desctription %>
+            </h1>
+          </div>
+        <% else %>
+          <div class="description mx-2 mt-2">
+            <h3>
+              Kjo pakete perfshine:
+            </h3>
+            <ul class="mb-2">
+              <% @package.desctription.split.each do |word| %>
+                <li>
+                  <p>
+                    <%= word %>
+                  </p>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="description-alternative mx-2 mt-2">
+            <h3>
+              Kjo pakete perfshine:
+            </h3>
+            <p>
+              <%= @package.desctription %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+      <div class="package-body">
+        <div class="price-body">
+          <h3><span>1 SEANCE</span></h3>
+          <h3>€<%= @package.price_session %></h3>
+        </div>
+        <div class="price-body">
+          <h3><span>3 SEANCA</span></h3>
+          <h3>€<%= @package.price_three_sessions %></h3>
+        </div>
+        <div class="price-body">
+          <h3><span>5 SEANCA</span></h3>
+          <h3>€<%= @package.price_five_sessions %></h3>
+        </div>
+        <% if @package.price_ten_sessions.present? %>
+          <div class="price-body">
+            <h3><span>10 SEANCA</span></h3>
+            <h3>€<%= @package.price_ten_sessions %></h3>
+          </div>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-12 col-lg-6 px-0">
+      <%= link_to "<-- Paketat", packages_path, class: "home-links m-0 mx-2" %>
+    </div>
+  </div>
+</div>

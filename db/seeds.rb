@@ -13,7 +13,7 @@ Package.destroy_all
 Dermoesthetic.destroy_all
 
 puts "Creating user..."
-mario = User.create!(email: "info@piperocare.com", password: "PiperoGirl2024")
+mario = User.create!(email: "info@piperocare.com", password: "PiperoGirl2024", admin: true)
 puts "Created user.."
 puts "*******************"
 puts "Creating services..."
@@ -69,10 +69,10 @@ end
 puts "*******************"
 puts "Creating packages"
 
-paketa1 = { name: "XL", desctription: "Këmbët(total), Bikini(total), Shpina(total), Gjoks & Barku", price_session: 90, price_three_sessions: 180, price_five_sessions: 240, price_ten_sessions: 420, user: mario }
+paketa1 = { name: "XL", desctription: "Këmbët(total), Bikini(total), Shpina(total), Gjoks_&_Barku", price_session: 90, price_three_sessions: 180, price_five_sessions: 240, price_ten_sessions: 420, user: mario }
 paketa2 = { name: "L", desctription: "Këmbët(gjysëm), Krahët(gjysëm), Bikini, Bark, Gjoks, Shpina(gjysëm)", price_session: 70, price_three_sessions: 140, price_five_sessions: 180, price_ten_sessions: 300, user: mario }
-paketa3 = { name: "M", desctription: "Sqetulla, Fund shpine , Qafa, Fytyrë, Pjesa braziliane", price_session: 45, price_three_sessions: 85, price_five_sessions: 110, price_ten_sessions: 180, user: mario }
-paketa4 = { name: "S", desctription: "Vija abdominale, Gjuha, Barsetat, Buzët, Duart, Këmbët(gishtat)", price_session: 20, price_three_sessions: 45, price_five_sessions: 60, price_ten_sessions: 70, user: mario }
+paketa3 = { name: "M", desctription: "Sqetulla, Fund_shpine, Qafa, Fytyrë, Pjesa_braziliane", price_session: 45, price_three_sessions: 85, price_five_sessions: 110, price_ten_sessions: 180, user: mario }
+paketa4 = { name: "S", desctription: "Vija_abdominale, Gjuha, Barsetat, Buzët, Duart, Këmbët(gishtat)", price_session: 20, price_three_sessions: 45, price_five_sessions: 60, price_ten_sessions: 70, user: mario }
 paketa5 = { name: "Full Body", desctription: "Vajza", price_session: 240, price_three_sessions: 480, price_five_sessions: 720, user: mario }
 paketa6 = { name: "Full Body", desctription: "Djem", price_session: 345, price_three_sessions: 690, price_five_sessions: 920, user: mario }
 

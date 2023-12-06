@@ -1,0 +1,27 @@
+<div class="container pack-container">
+  <% @packages.each do |package| %>
+    <%= link_to package_path(package), class: "navbar-brand w-50" do %>
+      <div class="pack-card">
+        <div class="pack-name">
+          <% if package.name.size <= 3 %>
+            <h1 class="bigger-text">
+              <%= p package.name %>
+            </h1>
+          <% else %>
+            <h1 class="smaller-text">
+              <%= p package.name %>
+            </h1>
+          <% end %>
+          <% if package.desctription == "Vajza" %>
+            <strong class="pack-description"><%= p "Vajza" %></strong>
+          <% elsif package.desctription == "Djem"%>
+            <strong class="pack-description"><%= p "Djem" %></strong>
+          <% else %>
+            <strong class="pack-description-icon"><i class="fa-solid fa-circle-info"></i></strong>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  <%= link_to "<-- Mbrapa", root_path, class: "home-links py-4" %>
+</div>

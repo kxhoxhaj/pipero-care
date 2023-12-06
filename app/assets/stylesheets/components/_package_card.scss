@@ -1,0 +1,227 @@
+.package-container{
+  box-shadow: rgba($color: #000000, $alpha: 0.3) 0px 10px 36px 0px, rgba($color: #000000, $alpha: 0.3) 0px 0px 0px 1px;
+  background-color: white;
+  height: auto;
+  padding: 0;
+  border-radius: 16px;
+}
+
+.package-name {
+  height: 250px;
+  width: 50%;
+  background-image: linear-gradient(to right, rgba($warm,0.9), rgba($cold,0.9));
+  clip-path: ellipse(240px 200px at 5% 15%);
+  border-top-left-radius: 16px;
+  position: relative;
+  li {
+    list-style: none;
+  }
+
+  h1 {
+    font-family: 'Nanum Myeongjo', serif;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+  }
+}
+
+.header{
+  display: flex;
+  .package-name{
+    flex: 1;
+  }
+  .description{
+    flex: 1;
+  }
+}
+#smaller-text {
+  font-size: 55px;
+  overflow-wrap: break-word;
+}
+
+.description-fullbody {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+}
+.vajza {
+  flex: 1;
+  h1 {
+    width: 100%;
+    color: $warm;
+    font-size: 70px;
+    font-weight: 900;
+    margin-right: 10px;
+  }
+}
+
+.djem {
+  flex: 1;
+  h1 {
+    width: 100%;
+    color: $cold;
+    font-size: 70px;
+    font-weight: 900;
+    margin-right: 10px;
+  }
+}
+
+.price-header {
+  width: 20%;
+  h3{
+    padding-left: 8px;
+    font-weight: 900;
+  }
+}
+.price-body {
+  width: 20%;
+  text-align: center;
+  h3{
+    font-weight: 900;
+  }
+}
+
+.package-body {
+  background-image: linear-gradient(to right, rgba($warm,0.4), rgba($cold,0.4));
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.description {
+  h3 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+  li{
+    list-style-type: circle
+  }
+}
+
+.description-alternative {
+  margin-bottom: 16px;
+  h3 {
+    font-weight: 900;
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+    margin: 0;
+    margin-right: 4px;
+  }
+}
+@media(min-width: 769px) {
+  .package-body {
+    span {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+  .description-alternative {
+    display: none;
+  }
+}
+@media(max-width: 768px) {
+  .header{
+    display: block;
+    position: static;
+  }
+
+  .package-container{
+    width: 95vw;
+    height: auto;
+  }
+  .package-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: ellipse(270px 150px at 50% 0%);
+    border-top-right-radius: 16px;
+    height: 150px;
+    h1 {
+      top: auto;
+      left: auto;
+    }
+    li {
+      float: left;
+      margin-right: 8px;
+    }
+  }
+  #smaller-text {
+    font-size: 55px;
+  }
+
+  .djem {
+    width: 100%;
+    h1 {
+      background-color: white;
+    }
+  }
+  .vajza {
+    width: 100%;
+    h1 {
+      background-color: white;
+    }
+  }
+
+  .package-body {
+    height: auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .price-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    h3 {
+      margin: 0;
+      padding: 8px 0;
+    }
+  }
+
+  .price-header {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .description-alternative {
+    h3 {
+      font-weight: 900;
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      margin: 0;
+      margin-right: 4px;
+    }
+    li {
+      width: 40%;
+      float: left;
+      margin: 8px;
+    }
+  }
+
+}

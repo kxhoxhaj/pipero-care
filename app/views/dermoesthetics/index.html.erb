@@ -1,0 +1,21 @@
+<div class="container analiza-container mb-0">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+    </div>
+  </div>
+  <% @dermoesthetics.each do |dermoesthetic| %>
+    <div class="service-card">
+      <div class="service-name">
+        <strong>
+          <%= p dermoesthetic.name %>
+        </strong>
+      </div>
+      <div class="separate">
+        <p> </p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="container analiza-container mt-3">
+  <%= link_to "<-- Mbrapa", root_path, class: "home-links analiza-link mt-0 mx-0" %>
+</div>
