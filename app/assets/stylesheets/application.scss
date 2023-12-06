@@ -13,18 +13,12 @@
 
 @media (min-width: 769px) {
   body {
-
     background-image: url("banner.png");
     width: 100vw;
     height: 90vh;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     animation: mymove 1.5s;
-  }
-
-  @keyframes mymove {
-    from {top: 50vh; left: 50%; background-size: 300px 300px;}
-    to {top: 0px; left: auto; background-size: 100vw 100vh;}
   }
 }
 
