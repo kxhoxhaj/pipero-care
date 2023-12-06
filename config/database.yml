@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: pipero_care_production
+  url: <%= ENV['DATABASE_URL'] %> 
   username: pipero_care
   password: <%= ENV["PIPERO_CARE_DATABASE_PASSWORD"] %>
