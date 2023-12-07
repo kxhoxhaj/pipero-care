@@ -1,4 +1,4 @@
-<div class="container pack-container">
+<div class="container pack-container" id="pack-container">
   <% @packages.each do |package| %>
     <%= link_to package_path(package), class: "navbar-brand w-50" do %>
       <div class="pack-card">
@@ -23,5 +23,5 @@
       </div>
     <% end %>
   <% end %>
-  <%= link_to "<-- Mbrapa", root_path, class: "home-links py-4" %>
+  <%= link_to "<-- Mbrapa", root_path, class: "home-links py-3" %>
 </div>

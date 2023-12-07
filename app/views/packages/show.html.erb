@@ -4,7 +4,7 @@
       <div class="header">
         <div class="package-name">
           <% if @package.name == "Full Body"%>
-            <h1 class="font-effect-fire" id="smaller-text">
+            <h1 id="smaller-text">
               <% @package.name.split.each do |word|%>
                 <li>
                   <%= p word %>
@@ -12,7 +12,7 @@
               <% end %>
             </h1>
           <% else %>
-            <h1 class="font-effect-fire">
+            <h1>
               <%= p @package.name %>
             </h1>
           <% end %>

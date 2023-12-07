@@ -1,7 +1,7 @@
 .pack-card {
   background-color: white;
-  height: 150px;
-  width: 350px;
+  height: 100px;
+  width: 250px;
   margin-top: 3rem;
   border-radius: 16px;
   box-shadow: $cold 0px 10px 36px 0px, $cold 0px 0px 0px 1px;
@@ -11,7 +11,7 @@
     top: 25%;
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
   }
   .pack-description{
     position: absolute;
@@ -20,7 +20,7 @@
     right: 8px;
     color: $warm;
     transform: rotate(-45deg);
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 .pack-description-icon{
@@ -29,23 +29,25 @@
   bottom: 6px;
   right: 12px;
   color: $warm;
-  font-size: 35px;
+  font-size: 20px;
 }
 .pack-container {
+  justify-content: center;
   .home-links {
     margin-top: 48px;
     margin-left: 0;
     margin-right: 0;
   }
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-columns: 250px 250px 250px;
   grid-gap: 16px;
 }
 
 @media (min-width:769px) and (max-width:1300px) {
   .pack-container {
     margin-top: 16px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 250px 250px;
     grid-gap: 16px;
   }
 }
