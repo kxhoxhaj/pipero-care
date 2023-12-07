@@ -89,13 +89,13 @@
   background-image: linear-gradient(to right, rgba($warm,0.4), rgba($cold,0.4));
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  height: 200px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   h3 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -129,7 +129,7 @@
 @media(min-width: 769px) {
   .package-body {
     span {
-      font-size: 22px;
+      font-size: 20px;
     }
     h3 {
       font-size: 30px;
