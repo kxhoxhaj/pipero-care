@@ -73,10 +73,12 @@ test:
 # the values provided in this file. Alternatively, you can specify a connection
 # URL environment variable explicitly:
 #
-production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+production:
+  <<: *default
+  database: pipero_care_production
+  username: pipero_care
+  password: <%= ENV["PIPERO_CARE_DATABASE_PASSWORD"] %>
